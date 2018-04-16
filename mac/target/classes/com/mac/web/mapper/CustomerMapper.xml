@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mac.web.mapperImpl.CustomerMapperImpl">
+
+<insert id="insertCustomer" parameterType="cmd">
+INSERT INTO customer
+VALUES(#{custom.customId},#{custom.customPass},#{custom.name},#{custom.email},#{custom.phoneNum},'1111',now())
+</insert>
+
+<update id="updateCustomer" parameterType="cmd">
+UPDATE customer
+SET name = #{com.name1}
+   ,email = #{com.email1} 
+   ,custom_pass = #{com.customPass1} 
+   ,phone_num = #{com.phone1}
+WHERE #{com.email1} LIKE #{com.email2} 
+	AND #{com.customPass1} LIKE #{com.customPass2}
+	AND custom_id LIKE #{custom.customId} 
+</update>
+
+<delete id="deleteCustomer" parameterType="cmd">
+DELETE
+FROM customer
+WHERE custom_pass LIKE #{custom.customPass}
+</delete>
+
+<select id="selectAll" resultType="cmd">
+
+</select>
+
+<select id="selectByName" resultType="cmd" parameterType="cmd">
+
+</select>
+
+<select id="selectById" resultType="custom" parameterType="cmd">
+SELECT custom_id AS customId,
+	   custom_pass AS customPass,
+	   name,
+	   email,
+	   phone_num AS phoneNum, 
+	   profile,
+	   join_date AS joinDate
+FROM customer
+WHERE custom_id LIKE #{custom.customId}
+</select>
+
+<select id="selectCount" resultType="int" parameterType="cmd">
+SELECT COUNT(*) 
+FROM customer 
+WHERE custom_id LIKE #{custom.customId} AND custom_pass LIKE #{custom.customPass}
+</select>
+
+</mapper>
