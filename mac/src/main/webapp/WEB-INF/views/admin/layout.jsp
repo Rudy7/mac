@@ -197,7 +197,7 @@
 	.div-itemList-right > div > div > button {
 	  border: 1px solid black;
  	  width: 70px;
-	  height: 30px;  
+	  height: 30px; 
 	}
 	.div-itemList-title1{
 		margin-left: 1px;
