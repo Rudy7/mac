@@ -50,7 +50,7 @@ public class HomeController {
 	public String home(Locale locale, Model model) {
 		logger.info("홈 컨트로러 home 도착 locale is {}.", locale);
 		model.addAttribute("path",contextFactory.ptx());
-		/*return "customer/login";*/
+		/*return "customer/login";33*/
 		return "home";
 	}
 	
