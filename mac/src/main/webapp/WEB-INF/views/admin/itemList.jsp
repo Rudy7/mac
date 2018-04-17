@@ -7,7 +7,7 @@
   	 <div>
   		<div class="div-itemList-title2"> || 상품 리스트</div>
   	 </div>
-  	 <div class="div-itemList-search">1
+  	 <div class="div-itemList-search">
  	 		<select name="sel-itemList-search" id="sel-itemList-search">
  	 			<option value="선택">선택</option>
  	 			<option value="customId">아이디</option>
@@ -18,7 +18,7 @@
  	 		<input type="text" placeholder="내용을 입력해 주세요" />
  	 		<button>검색</button>
      </div>
-     <div class="div-itemList-detailSearch">2
+     <div class="div-itemList-detailSearch">
      	<div>
 	     	가입일 <input type="text" /> - <input type="text" />
 	     	구매금액  <input type="text" />원 ~ <input type="text" />원	     	
@@ -76,7 +76,7 @@
      		</c:forEach>
      	</div>
      </div>
-     <div id="div-itemList-page"> < 1 2 3 4 5 > 
+     <div id="div-itemList-page">  1 2 3 4 5 
      	<%-- <c:forEach begin="1" end="5" items="" step="" var="" varStatus="i">
      		<span id="span-itemList-pagination">
      			<a href="#">${i.index}</a>

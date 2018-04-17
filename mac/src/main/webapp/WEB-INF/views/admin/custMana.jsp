@@ -7,7 +7,7 @@
 	 <div>
 	  	<div class="div-custMana-title2"> || 회원 리스트</div>
 	 </div>
-	  	 <div class="div-custMana-search">1
+	  	 <div class="div-custMana-search">
   	 		<select name="sel-custMana-search" id="sel-custMana-search">
   	 			<option value="선택">선택</option>
   	 			<option value="customId">아이디</option>
@@ -18,7 +18,7 @@
   	 		<input type="text" placeholder="내용을 입력해 주세요" />
   	 		<button>검색</button>
 	     </div>
-	     <div class="div-custMana-detailSearch">2
+	     <div class="div-custMana-detailSearch">
 	     	<div>
 		     	가입일 <input type="text" /> - <input type="text" />
 		     	구매금액  <input type="text" />원 ~ <input type="text" />원	     	
@@ -76,7 +76,7 @@
 	     		</c:forEach>
 	     	</div>
 	     </div>
-	     <div id="div-custMana-page"> < 1 2 3 4 5 > 
+	     <div id="div-custMana-page">  1 2 3 4 5  
 	     	<%-- <c:forEach begin="1" end="5" items="" step="" var="" varStatus="i">
 	     		<span id="span-custMana-pagination">
 	     			<a href="#">${i.index}</a>

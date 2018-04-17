@@ -3,6 +3,13 @@
 "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
 "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
 <tiles-definitions>
+    <definition name="admin" template="/WEB-INF/views/admin/layout.jsp">
+        <put-attribute name="content" value=""/>
+    </definition>
+    <definition name="*.admin" extends="admin">
+ 		<put-attribute name="content" value="/WEB-INF/views/admin/{1}.jsp"/>
+    </definition>
+    
     <definition name="customer" template="/WEB-INF/views/customer/layout.jsp">
         <put-attribute name="title" value=""/>
         <put-attribute name="header" value=""/>
@@ -12,12 +19,5 @@
     <definition name="*.customer" extends="customer">
         <put-attribute name="header" value="/WEB-INF/views/customer/header.jsp"/>
         <put-attribute name="content" value="/WEB-INF/views/customer/{1}.jsp"/>
-    </definition>
-    
-    <definition name="admin" template="/WEB-INF/views/admin/layout.jsp">
-        <put-attribute name="content" value=""/>
-    </definition>
-    <definition name="*.admin" extends="admin">
- 		<put-attribute name="content" value="/WEB-INF/views/admin/{1}.jsp"/>
     </definition>
 </tiles-definitions>

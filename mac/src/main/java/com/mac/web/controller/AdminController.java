@@ -28,26 +28,23 @@ public class AdminController {
 			return "custMana.admin";
 		}else {
 			return "redirect:/admin";
-		}
-		
+		}		
 	}
 	@RequestMapping(value="/member",method=RequestMethod.GET)
 	public String member() {
 		logger.info("어드민 컨트롤러 addItem()===============================");
-		return "admin/addItem";
+		return "custMana.admin";
 	}
 	@RequestMapping(value="/addItem",method=RequestMethod.GET)
 	public String addItem() {
 		logger.info("어드민 컨트롤러 addItem()===============================");
-		return "admin/addItem";
+		return "addItem.admin";
 	}
 	
 	@RequestMapping(value="/itemList",method=RequestMethod.GET)
 	public String itemList() {
-		
 		logger.info("어드민 컨트롤러 itemList()===============================");
-		return "admin/itemList";
+		return "itemList.admin";
 	}
 	
 }
-
