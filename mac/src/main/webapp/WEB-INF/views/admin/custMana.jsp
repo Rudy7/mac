@@ -1,97 +1,86 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<!doctype html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8" />
-	<title>Document</title>
-	<script src="${path.js}/jquery-3.3.1.min.js"></script>
-	<script src="${path.js}/bootstrap.js"></script>
-	<style>
-
-	</style>
-</head>
-<body>
-	<table id="tab-custMana-frame">
-		<tr>
-			<td id="td-custMana-left">
-				<div></div>
-				<div>
-					<button id="div-custMana-custMana" class="btn-left" >회원 관리</button>
-				</div>
-				<div >
-					<button id="div-custMana-addItem" class="btn-left">상품 등록</button>
-				</div>
-				<div >
-					<button id="div-custMana-itemList" class="btn-left">상품 목록</button>
-				</div>
-				<div> </div>
-				<div> </div>
-				<div> </div>
-				<div> </div>	
-			</td>
-			<td colspan="4">
-				<table id="tab-custMana-right">
-					<thead>
-						<tr>
-							<td colspan="2" rowspan="2">회원 관리 리스트</td>
-						</tr>
-						<tr>
-							<td colspan="4">
-								<input type="text" /> 
-							</td>
-							<td>
-								<button>검색</button> 
-							</td>
-							<td>
-								<button id="btn-custMana-addcust">회원추가</button>
-							</td>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td class="text-center">아이디</td>
-							<td class="text-center">비밀번호</td>
-							<td class="text-center">이름</td>
-							<td class="text-center">이메일</td>
-							<td class="text-center">전화번호</td>
-							<td class="text-center">가입날짜</td>
-							<td class="text-center">수정</td>
-							<td class="text-center">삭제</td>
-						</tr>
-						<tr>
-							<td colspan="8">고객정보가 없습니다</td>
-						</tr>
-					<%-- 	<tr>
-							<td class="text-center">${login.customId}</td>
-							<td class="text-center">${login.customPass}</td>
-							<td class="text-center">${login.name}</td>
-							<td class="text-center">${login.email}</td>
-							<td class="text-center">${login.phoneNum}</td>
-							<td class="text-center">${login.joinDate}</td>
-							<td class="text-center"></td>
-							<td class="text-center"></td>
-						</tr> --%>
-					</tbody>
-					<tfoot>
-					
-					</tfoot>
-				</table>
-			</td>
-		</tr>
-	</table>
-</body>
-	<script>
-/* 		$('#div-custMana-addItem').on('click',function(){
-			alert("상품 등록 클릭");
-			location.href="${path.context}/addItem";
-		});
-		$('#div-custMana-itemList').on('click',function(){
-			alert("상품 목록 클릭");
-			location.href="${path.context}/itemList";
-		});
-		$('#btn-custMana-addcust').on('click',function(){
-			alert("고객추가 클릭");
-			location.href="${path.context}/join"
-		}); */
-	</script>
-</html>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<form action="">	
+	<div>
+		<div class="div-custMana-title1"> || 관리자 페이지 > 회원 리스트</div>
+	 </div>
+	 <div>
+	  	<div class="div-custMana-title2"> || 회원 리스트</div>
+	 </div>
+	  	 <div class="div-custMana-search">1
+  	 		<select name="sel-custMana-search" id="sel-custMana-search">
+  	 			<option value="선택">선택</option>
+  	 			<option value="customId">아이디</option>
+  	 			<option value="name">이름</option>
+  	 			<option value="email">이메일</option>
+  	 			<option value="phoneNum">전화번호</option>	  	 		
+  	 		</select> 
+  	 		<input type="text" placeholder="내용을 입력해 주세요" />
+  	 		<button>검색</button>
+	     </div>
+	     <div class="div-custMana-detailSearch">2
+	     	<div>
+		     	가입일 <input type="text" /> - <input type="text" />
+		     	구매금액  <input type="text" />원 ~ <input type="text" />원	     	
+	     	</div>
+	     	<div>	
+	     		회원 등급 
+	     		<select name="sel-custMana-grade" id="sel-custMana-grade">
+	     			<option value="선택">선택</option>
+	  	 			<option value="1">1</option>
+	  	 			<option value="2">2</option>
+	  	 			<option value="3">3</option>
+	  	 			<option value="4">4</option>	 	
+	     	    </select>
+	     	    적립금 <input type="text" />원 ~ <input type="text" />원	  
+	     	</div>
+	     	<div>
+	     		메일수신 <input type="radio" />수신 <input type="radio" />거부
+	     	</div>
+	     	<div>
+	     		<button>상세검색</button>
+	     	</div>
+	     </div>
+	     <div>
+	     	회원등급: 1.스타일샾 회원({00}명), 2.오픈샾 회원({00}명), 3.고객센터({0}명), 4.운영팀({00}명), 5사업팀({00}명)                             
+	     </div>
+	     	<br>
+	     	<br>
+	     	<br>
+	     <div>
+	     	<div class="div-custMana-list">
+	     		<div class="div-custMana-listIn">
+	     			<div>가입일</div>
+	     			<div>아이디</div>
+	     			<div>이름</div>
+	     			<div>회원등급</div>
+	     			<div>구매금액</div>
+	     			<div>폰번호</div>
+	     			<div>이메일</div>
+	     			<div>수정/삭제</div>
+	     		</div>
+	    	 	<c:forEach begin="0" end="4" items="" step="1" var="loginUser" varStatus="i">
+	     			<div class="div-custMana-listContents">
+	     			<div>${loginUser.joinDate}</div>
+	     			<div>${loginUser.customId}</div>
+	     			<div>${loginUser.name}</div>
+	     			<div>${loginUser.gradeCode}</div>
+	     			<div>${loginUser.totalPrice}</div>
+	     			<div>${loginUser.phoneNum}</div>
+	     			<div>${loginUser.email}</div>
+	     			<div>
+		     			<a href="#" id="a-custMana-update">수정/</a>
+		     			<a href="#" id="a-custMana-delete">삭제</a>	     			
+	     			</div>
+	     			</div>
+	     		</c:forEach>
+	     	</div>
+	     </div>
+	     <div id="div-custMana-page"> < 1 2 3 4 5 > 
+	     	<%-- <c:forEach begin="1" end="5" items="" step="" var="" varStatus="i">
+	     		<span id="span-custMana-pagination">
+	     			<a href="#">${i.index}</a>
+	     		</span>
+	     	</c:forEach> --%>
+	     </div>
+	  </form>

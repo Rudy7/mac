@@ -46,10 +46,11 @@ public class HomeController {
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 	@Autowired ContextFactory contextFactory;
 	@Autowired Path path;
-	@RequestMapping(value = "/", method = RequestMethod.GET)
+	@RequestMapping(value = "/admin", method = RequestMethod.GET)
 	public String home(Locale locale, Model model) {
 		logger.info("홈 컨트로러 home 도착 locale is {}.", locale);
 		model.addAttribute("path",contextFactory.ptx());
+		/*return "customer/login";*/
 		return "home";
 	}
 	

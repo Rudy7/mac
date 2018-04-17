@@ -100,7 +100,7 @@
 		$('#btn-login').on('click',function(){
 			alert("로그인 클릭");
 			$('#form-login')
-			.attr('action','${path.context}/login/open')
+			.attr('action','${path.context}/admin/login')
 			.attr('method','post')
 			.submit();
 		});
