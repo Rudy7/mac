@@ -114,7 +114,7 @@
 	    </div>
 	  </div>  
 	</div>
-    <div class="b-div-itemList-page" id="b-div-itemList-page">1  2  3  4  5 
+    <div class="b-div-itemList-page" id="b-div-itemList-page">1 &nbsp;  2 &nbsp; 3 &nbsp; 4 &nbsp; 5 
      	<%-- <c:forEach begin="1" end="5" items="" step="" var="" varStatus="i">
      		<span id="b-span-itemList-pagination">
      			<a href="#">${i.index}</a>
