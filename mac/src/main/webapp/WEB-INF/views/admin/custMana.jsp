@@ -8,7 +8,7 @@
 	  	<div class="div-custMana-title2"> || 회원 리스트</div>
 	 </div>
 	  	 <div class="div-custMana-search">
-  	 		<select name="sel-custMana-search" id="sel-custMana-search">
+  	 		<select name="b-sel-custMana-search" id="b-sel-custMana-search">
   	 			<option value="선택">선택</option>
   	 			<option value="customId">아이디</option>
   	 			<option value="name">이름</option>
@@ -25,7 +25,7 @@
 	     	</div>
 	     	<div>	
 	     		회원 등급 
-	     		<select name="sel-custMana-grade" id="sel-custMana-grade">
+	     		<select name="b-sel-custMana-grade" id="b-sel-custMana-grade">
 	     			<option value="선택">선택</option>
 	  	 			<option value="1">1</option>
 	  	 			<option value="2">2</option>
@@ -44,9 +44,9 @@
 	     <div>
 	     	회원등급: 1.스타일샾 회원({00}명), 2.오픈샾 회원({00}명), 3.고객센터({0}명), 4.운영팀({00}명), 5사업팀({00}명)                             
 	     </div>
-	     	<br>
-	     	<br>
-	     	<br>
+	     	<br/>
+	     	<br/>
+	     	<br/>
 	     <div>
 	     	<div class="div-custMana-list">
 	     		<div class="div-custMana-listIn">
@@ -60,7 +60,7 @@
 	     			<div>수정/삭제</div>
 	     		</div>
 	    	 	<c:forEach begin="0" end="4" items="" step="1" var="loginUser" varStatus="i">
-	     			<div class="div-custMana-listContents">
+	     		<div class="div-custMana-listContents">
 	     			<div>${loginUser.joinDate}</div>
 	     			<div>${loginUser.customId}</div>
 	     			<div>${loginUser.name}</div>
@@ -69,16 +69,16 @@
 	     			<div>${loginUser.phoneNum}</div>
 	     			<div>${loginUser.email}</div>
 	     			<div>
-		     			<a href="#" id="a-custMana-update">수정/</a>
-		     			<a href="#" id="a-custMana-delete">삭제</a>	     			
+		     			<a href="#" id="b-a-custMana-update">수정/</a>
+		     			<a href="#" id="b-a-custMana-delete">삭제</a>	     			
 	     			</div>
-	     			</div>
+	     		</div>
 	     		</c:forEach>
 	     	</div>
 	     </div>
-	     <div id="div-custMana-page">  1 2 3 4 5  
+	     <div class="b-div-custMana-page" id="b-div-custMana-page">  1 2 3 4 5  
 	     	<%-- <c:forEach begin="1" end="5" items="" step="" var="" varStatus="i">
-	     		<span id="span-custMana-pagination">
+	     		<span id="b-span-custMana-pagination">
 	     			<a href="#">${i.index}</a>
 	     		</span>
 	     	</c:forEach> --%>

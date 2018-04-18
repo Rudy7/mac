@@ -5,8 +5,9 @@
 <head>
 	<meta charset="UTF-8" />
 	<title>Document</title>
-	<script src="${path.js}/jquery-3.3.1.min.js"></script>
-	<script src="${path.js}/bootstrap.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<style>
 		#tab-login-title{
 			border: 1px solid gray; 

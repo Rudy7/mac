@@ -10,7 +10,7 @@
 	  	 </div>
 	  	 	<br />
 	  	 <div>
-	  	 	 <select name="sel-addItem-choice" id="sel-addItem-choice">
+	  	 	 <select class="b-sel-addItem-choice" name="b-sel-addItem-choice" id="b-sel-addItem-choice">
 	  	 	 	<option value="카테고리 선택">카테고리 선택</option>
 	  	 		<option value="아이">아이</option>
 	  	 		<option value="립">립</option>
@@ -21,7 +21,7 @@
 	  	 		<option value="툴">툴</option>
 	  	 		<option value="향수">향수</option>
 	  	 	 </select>
-	  	 	 <input id="inp-addItem-itemName" type="text" placeholder="*상품명을 입력하세요"/>
+	  	 	 <input class="b-inp-addItem-itemName" id="b-inp-addItem-itemName" type="text" placeholder="*상품명을 입력하세요"/>
 	  	 </div>		
 	  	 	<br />
 	  	 	
@@ -73,5 +73,5 @@
 		  	 </div> -->
 	  	 </div>
 	  	 <div>		
-		  	 	 	<button id="btn-addItem-insert"> 추가 </button>		 	  	 	 
+		  	 	 	<button class="b-btn-addItem-insert" id="b-btn-addItem-insert"> 추가 </button>		 	  	 	 
 		 </div>
