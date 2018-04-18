@@ -10,7 +10,7 @@
   	 <div class="div-itemList-total">
 	  <div class="div-itemList-up">
 	  	<div>
-	  		단일 검색 &nbsp; &nbsp; <!-- &nbsp; -->
+	  		단일 검색 &nbsp;&nbsp; 
 	  		<select name="b-sel-itemList-oSearch" id="b-sel-itemList-oSearch" class="inp-itemList-glycal">
 	  			<option value="카테고리 선택">카테고리 선택</option>
 	  			<option value="아이">아이</option>
@@ -21,12 +21,12 @@
 	  			<option value="브러시">브러시</option>
 	  			<option value="툴">툴</option>
 	  			<option value="향수">향수</option>	
-	  		</select> &nbsp; &nbsp;
+	  		</select> &nbsp;&nbsp;
 	  		<input type="text" placeholder="상품명을 입력하세요" class="inp-itemList-insItem"/>&nbsp; &nbsp;
 	  		<button>검색</button>
 	    </div>
 	    <div class="div-itemList-detailSearch">
-		    <div>상세 검색&nbsp; &nbsp;&nbsp; &nbsp;
+		    <div class="div-itemList-detail">상세 검색&nbsp;&nbsp;&nbsp;&nbsp;
 		    	<select name="b-sel-itemList-dSearch" id="b-sel-itemList-dSearch" class="inp-itemList-glycal">
 		  			<option value="카테고리 선택">카테고리 선택</option>
 		  			<option value="아이">아이</option>
@@ -40,7 +40,7 @@
 		  		</select> 
 		    </div>
 		    <div class="div-itemList-price">
-		    	<div> &nbsp; &nbsp;판매 가격</div>
+		    	<div> &nbsp;&nbsp;판매 가격</div>
 		    	<div >	
 		    		<input class="inp-itemList-price" type="text"/>&nbsp;원
 		    	</div>
@@ -57,14 +57,17 @@
 		      <div>
     	      	<input type="text" class="inp-itemList-glycal">
 		      </div>
-    	      <div>~</div>
+    	      <div>~&nbsp;&nbsp;</div>
+    	       <div class="div-itemList-glyCal">
+		        <button class="btn-itemList-glyCal" type="submit"><i class="glyphicon glyphicon-calendar"></i></button>
+		      </div>
     	      <div>
     	      	<input type="text" class="inp-itemList-glycal">
     	      </div>	  
 		    </div>
-		    <div>진열 여부 &nbsp; &nbsp;
-		    	<input type="checkbox" />진열 &nbsp; &nbsp;
-		    	<input type="checkbox" />품절 &nbsp; &nbsp;
+		    <div class="div-itemList-display">진열 여부 &nbsp;&nbsp;
+		    	<input type="checkbox" />진열 &nbsp;&nbsp;
+		    	<input type="checkbox" />품절 &nbsp;&nbsp;
 		    	<input type="checkbox" />숨김 
 		    </div>
             <div></div>		  
@@ -72,9 +75,11 @@
 		    	<button id="b-btn-itemList-detSearClick" class="b-btn-itemList-detSearClick">검색</button>
 		    </div>
 		</div>		    
+	  </div> <br/><br/>
+	  <div>
+	  	총 등록 상품 : 0000개/ 검색된 상품: 0000개
 	  </div>
-	  
-	  <div>2
+	  <div>
 	  	<div class="div-itemList-list">	
 	      <div class="div-itemList-listIn">
 	      	<div>선택</div>
@@ -95,22 +100,21 @@
 	            <div>${loginUser.}</div>
 	            <div>${loginUser.joinDate}</div>
                 <div>${loginUser.admin2}</div>
-	            <div> <a href="#" id="b-a-itmeList-update">수정</a> </div>
+	            <div> <a href="#" id="b-a-itmeList-update">수정/삭제</a> </div>
 	        </c:forEach>
 	      </div>
 	  	</div>    
 	  </div>
 	  
-	  <div>3
+	  <div>
 	  	<div class="div-itemList-btn">
-	    	<button>삭제</button>
-	        <button>진열</button>
-	        <button>숨김</button>
+	        <button>진열</button>&nbsp;
+	        <button>숨김</button>&nbsp;
 	        <button>품절</button>
 	    </div>
 	  </div>  
 	</div>
-    <div id="b-div-itemList-page">  1 2 3 4 5 
+    <div class="b-div-itemList-page" id="b-div-itemList-page">1  2  3  4  5 
      	<%-- <c:forEach begin="1" end="5" items="" step="" var="" varStatus="i">
      		<span id="b-span-itemList-pagination">
      			<a href="#">${i.index}</a>

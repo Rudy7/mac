@@ -171,8 +171,8 @@
 		  padding: 10px;
 	}
 	.div-itemList-total > div {
-	  background-color: rgba(255, 255, 255, 0.8);
-	  border: 1px solid black;
+	 /*  background-color: rgba(255, 255, 255, 0.8); */
+	  /* border: 1px solid black; */
 	  /* text-align: center; */
 	  font-size: 18px;
 	}
@@ -180,12 +180,12 @@
 	  display: grid;
 	  grid-template-row: auto auto;
 	  grid-gap: 5px;
-	  border: 1px solid black;
+	  /* border: 1px solid black; */
 	  padding: 5px;
 	  background-color: #7b7b82;
 	}
 	.div-itemList-up > div{
-	  border: 1px solid black;
+	  /* border: 1px solid black; */
 	  text-align: center;
 	  background-color: rgb(222, 239, 239);
 	}
@@ -193,47 +193,63 @@
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-gap: 5px;
-		background-color: #7b7b82;
 		padding: 10px;
-		/* height: 80px; */
+		background-color: #7b7b82;
 		width: 100%;
 		margin: 0 auto;	
-		border: 1px solid black;	
+	    /* border: 1px solid black; */
+		/* height: 80px; */
 	}
 	.div-itemList-detailSearch > div{
 		 background-color: rgb(222, 239, 239);
- 		 border: 1px solid black;
+ 		 /* border: 1px solid black;  */
 		 /*  text-align: center; */
 		  height: 98%;
 	}
+	.div-itemList-detail{
+		border: 1px solid black;
+	}
+	.div-itemList-display {
+		border: 1px solid black;
+	}
     .b-btn-itemList-detSearClick {
-    	border: 1px solid black;
+    	/* border: 1px solid black; */
     	float: right;
     }
 	.div-itemList-list {
-		border: 1px solid black; 
+		display: grid;
+		grid-template-row: auto auto;
+		/* border: 1px solid black; */ 
 		text-align: center;
-	    width: 1154px; 
+	    width: 100%;
+	    padding: 5px;
+	  	grid-gap: 5px;
+	    background-color: #7b7b82;
 	   /*  heigh: 300px; */
-	    margin: 0 auto;
        /*  border-radius:15px; */
 	}
+	.div-itemList-list > div {
+	  /* border: 1px solid black; */
+	  text-align: center;
+	  background-color: rgb(222, 239, 239);
+	  }
 	.div-itemList-listIn {
 		display: grid;
 	  	grid-template-columns: auto auto auto auto auto auto auto auto;
-		border: 1px solid black; 
+		/* border: 1px solid black; */ 
 	}
 	.di-itemList-listContent {
-		border: 1px solid black;
+		/* border: 1px solid black; */
 		height: 220px;
 	}
 	.div-itemList-btn {
-		border: 1px solid black;
+		/* border: 1px solid black; */
 		margin-left: 950px;
 	}
 	.div-itemList-addDay {
 		display: grid;
-	  	grid-template-columns: 3fr 0fr 4fr 1fr 4fr; 
+	  	grid-template-columns: 3fr 0fr 4fr 1fr 0fr 4fr; 
+	  	border: 1px solid black;
 	}
 	.inp-itemList-glycal {
 	 	width: 160px; 
@@ -246,10 +262,14 @@
 	.div-itemList-price{
 		display: grid;
 	  	grid-template-columns: 5fr 8fr 2fr 8fr; 
+	  	border: 1px solid black;
 	}
 	.inp-itemList-price {
 		width: 140px;
 		height: 27px;
+	}
+	.b-div-itemList-page {
+		text-align: center;
 	}
   </style>
 </head>
