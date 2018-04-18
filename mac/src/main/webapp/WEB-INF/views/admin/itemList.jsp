@@ -6,11 +6,11 @@
   	 </div>
   	 <div>
   		<div class="div-itemList-title2"> || 상품 리스트</div>
-  	 </div>
+  	 </div>  
   	 <div class="div-itemList-total">
 	  <div class="div-itemList-up">
 	  	<div>
-	  		단일 검색 &nbsp; &nbsp;
+	  		단일 검색 &nbsp; &nbsp; <!-- &nbsp; -->
 	  		<select name="b-sel-itemList-oSearch" id="b-sel-itemList-oSearch" class="inp-itemList-glycal">
 	  			<option value="카테고리 선택">카테고리 선택</option>
 	  			<option value="아이">아이</option>
